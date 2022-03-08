@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: antiquewhite;
+}
+#timer {
+  margin: 20%;
+  padding: 5%;
+  background-color: blueviolet;
+  border-radius: 50px;
+}
+#minutes,
+#seconds {
+  font-size: 30px;
+}
+
+.show-message {
+  font-size: 25px;
+  color: blueviolet;
+}
