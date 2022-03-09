@@ -1,23 +1,73 @@
 * {
-  margin: 0;
-  padding: 0;
+  padding: 0px;
 }
-
 .container {
-  background-color: antiquewhite;
+  border-radius: 20px;
+  border: solid 3px rgb(179, 156, 182);
+  background-color: rgb(247, 171, 240);
+  max-width: 700px;
+  min-width: 400px;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+h1 {
+  margin-bottom: 40px;
 }
 #timer {
-  margin: 20%;
-  padding: 5%;
-  background-color: blueviolet;
-  border-radius: 50px;
+  margin: 30px 180px;
 }
 #minutes,
 #seconds {
-  font-size: 30px;
+  font-size: 20px;
+  display: inline;
+}
+img {
+  border: 1px solid blue;
+}
+.pulse {
+  animation: pulse 3s infinite;
+  margin: 0 auto;
+  display: table;
+  animation-direction: alternate;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
 }
 
 .show-message {
+  margin: 10px;
   font-size: 25px;
   color: blueviolet;
+}
+.buttons .fa {
+  font-size: 50px;
+  color: whitesmoke;
+
+  border-radius: 60px;
+  margin: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+footer .fa {
+  font-size: 20px;
+  margin: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: whitesmoke;
+}
+
+.open-source {
+  margin-bottom: 0px;
+  font-size: 11px;
+}
+
+i:hover {
+  transform: translateY(-1px);
+  cursor: pointer;
+}
+
+.instructions {
+  border-radius: 30px;
+  margin: 15px;
+  padding: 15px;
+  font-size: 15px;
+  text-align: justify;
+  border: 1px solid black;
 }

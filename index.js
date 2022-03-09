@@ -6,14 +6,13 @@ var reset = document.getElementById("reset");
 var minutes = document.getElementById("minutes");
 var seconds = document.getElementById("seconds");
 
-var click_sound = new Audio("click.mp3");
-var bell = new Audio("bell.mp3");
+var bell_meditate = new Audio("stop_meditate.mp3");
 
 //declare a reference to a countner variable that can be undefide or define in functions
 var startCountner;
 // Começar o timer-estabelecer intervalo de 1000 ms, quando a variavel startCountner for indefinida
 function Start() {
-  click_sound.play();
+  bell_meditate.play();
   if (startCountner === undefined);
   startCountner = setInterval(timer, 1000);
 }
@@ -32,7 +31,7 @@ function timer() {
   if (seconds.innerText != 0) {
     seconds.innerText--;
   } else if (minutes.innerText != 0 && seconds.innerText == 0) {
-    seconds.innerText = 15;
+    seconds.innerText = 59;
     minutes.innerText--;
   } else if (seconds.innerText == 0 && minutes.innerText == 0) {
     document.getElementById("message").innerHTML = "Done";
@@ -42,7 +41,7 @@ function timer() {
   }
 }
 function audio() {
-  bell.play();
+  bell_meditate.play();
 
   Reset();
 }
