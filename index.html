@@ -10,26 +10,30 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Document</title>
   </head>
-  <body onload="template()">
+  <body>
     <div class="container text-center">
       <div class="title">
         <h1>15 minutes of Meditation</h1>
       </div>
       <div class="row" id="timer">
-        <div class="col-4" id="minutes"><h1></h1></div>
+        <div class="col-4" id="minutes"><h1>1</h1></div>
         <div class="col-4"><h1>:</h1></div>
-        <div class="col-4" id="seconds"><h1></h1></div>
+        <div class="col-4" id="seconds"><h1>00</h1></div>
       </div>
       <h1 id="message" class="show-message"></h1>
       <div class="row">
         <div class="col-6">
-          <div class="btn btn-primary" onclick="start()" id="start">Start</div>
+          <button onclick="Start()" id="start" class="btn">Start</button>
         </div>
         <div class="col-6">
-          <div class="btn btn-primary" id="pause">Pause</div>
+          <button onclick="Reset()" id="reset" class="btn">Reset</button>
         </div>
       </div>
     </div>

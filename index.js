@@ -1,38 +1,52 @@
-var minutes = 15;
-var seconds = "00";
+//declare buttuns
+var start = document.getElementById("start");
+var reset = document.getElementById("reset");
 
-function template() {
-  document.getElementById("minutes").innerHTML = minutes;
-  document.getElementById("seconds").innerHTML = seconds;
+//declare variables
+var minutes = document.getElementById("minutes");
+var seconds = document.getElementById("seconds");
+
+var click_sound = new Audio("click.mp3");
+var bell = new Audio("bell.mp3");
+
+//declare a reference to a countner variable that can be undefide or define in functions
+var startCountner;
+// Começar o timer-estabelecer intervalo de 1000 ms, quando a variavel startCountner for indefinida
+function Start() {
+  click_sound.play();
+  if (startCountner === undefined);
+  startCountner = setInterval(timer, 1000);
+}
+// Resetar o timer-parar intervalo, quando a variavel startCountner for indefinida e reestabelecer timer inicial
+function Reset() {
+  minutes.innerText = 15;
+  seconds.innerText = "00";
+  stopInterval();
+  startCountner = undefined;
 }
 
-function start() {
-  minutes = 14;
-  seconds = 59;
-  document.getElementById("minutes").innerHTML = minutes;
-  document.getElementById("seconds").innerHTML = seconds;
+//Start Timer quando os segundos forem diferentes de 0, diminuir os segundos de 1 em 1.
+//Mas se os minutos forem diferentes de 0 e os segundos igausi guais a 0, tornar segundos 59
+//e diminuir minutos de 1 em 1
+function timer() {
+  if (seconds.innerText != 0) {
+    seconds.innerText--;
+  } else if (minutes.innerText != 0 && seconds.innerText == 0) {
+    seconds.innerText = 15;
+    minutes.innerText--;
+  } else if (seconds.innerText == 0 && minutes.innerText == 0) {
+    document.getElementById("message").innerHTML = "Done";
+    document.getElementById("message").classList.add("show-message");
 
-  var minutes_interval = setInterval(minutesTimer, 60000);
-  var seconds_interval = setInterval(secondsTimer, 1000);
-
-  function minutesTimer() {
-    minutes = minutes - 1;
-    document.getElementById("minutes").innerHTML = minutes;
+    audio();
   }
-  function secondsTimer() {
-    seconds = seconds - 1;
-    document.getElementById("seconds").innerHTML = seconds;
+}
+function audio() {
+  bell.play();
 
-    if (seconds <= 0) {
-      if (minutes <= 0) {
-        clearInterval(minutes_interval);
-        clearInterval(seconds_interval);
-
-        document.getElementById("message").innerHTML = "Done";
-
-        document.getElementById("message").classList.add("show-message");
-      }
-      seconds = 60;
-    }
-  }
+  Reset();
+}
+// Parar o timer-limpar intervalo
+function stopInterval() {
+  clearInterval(startCountner);
 }
