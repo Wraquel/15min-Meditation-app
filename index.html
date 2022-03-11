@@ -9,32 +9,35 @@
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
-    />
+    /><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Belleza&family=Manjari:wght@100&display=swap" rel="stylesheet">
    <script src="https://kit.fontawesome.com/43c43aef87.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>15 Minutes of Meditation</title>
+    <title>Your daily Meditation</title>
   </head>
   <body>
     <div class="container text-center">
-      <div class="title">
-        <h1>15min of Meditation</h1>
+      <div>
+        <h4 id="daily-title">Your daily</h4><h2 class="meditation-title"id="meditation-title"> Meditation</h2>
       </div>
-
-      <img class="pulse" src="./meditation_image.png" width="200px"/>
+      <img id="pulse" src="./meditation.png" width="350px"/>
       <div id="timer">
         <span id="minutes">15</span>
         <span>:</span>
         <span id="seconds">00</span>
       </div>
-      <h1 id="message" class="show-message"></h1>
       <div class="buttons">     
-            <i onclick="Start()" class="fa fa-play-circle" aria-hidden="true"></i>        
-            <i onclick="Reset()" class="fa fa-stop-circle" aria-hidden="true"></i>     
-          </div>
-          <footer>  
-     <a class="nav-link" href="/instructions.html" title="About Me">  <i   class="fa fa-file-text" aria-hidden="true"></i></a>
-          <p class="open-source text-center">Designed and coded by Raquel W.,
-            <a href="" target="_blank">open-source</a>on GitHub</p>
+        <i onclick="Start()" class="fa fa-play-circle" aria-hidden="true"></i>        
+        <i onclick="Reset()" class="fa fa-stop-circle" aria-hidden="true"></i>     
+      </div>
+     
+      <footer>  <div class="links">
+      ||  <a  href="./welcome.html"> Welcome </a>  
+      ||<a href="./instructions.html" > To remember </a>|| </div>  
+      <p class="open-source text-center">By Raquel W.,
+            <a href="" target="_blank">open-source</a> on GitHub</p>
             </footer>
         
       </div>

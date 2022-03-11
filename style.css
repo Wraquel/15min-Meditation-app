@@ -2,59 +2,102 @@
   padding: 0px;
 }
 .container {
+  font-family: "Belleza", sans-serif;
   border-radius: 20px;
-  border: solid 3px rgb(179, 156, 182);
-  background-color: rgb(247, 171, 240);
+
+  background: linear-gradient(
+    -20deg,
+    rgb(233, 222, 250) 0%,
+    rgb(251, 252, 219) 100%
+  );
+
   max-width: 700px;
   min-width: 400px;
-  margin-top: 30px;
+  margin-top: 15px;
   padding-top: 20px;
 }
-h1 {
-  margin-bottom: 40px;
+
+.title-welcome h2 {
+  font-size: 50px;
+  text-align: start;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+.title-welcome h3 {
+  font-size: 40px;
+  margin-top: 10px;
+  text-align: center;
+}
+.title-welcome h1 {
+  font-size: 50px;
+  margin-top: 10px;
+  text-align: end;
+  margin-right: 60px;
+}
+#meditation-title {
+  line-height: 20px;
+}
+.message-namaste {
+  font-size: 40px;
 }
 #timer {
-  margin: 30px 180px;
+  margin: 0px 20px -20px;
 }
 #minutes,
 #seconds {
-  font-size: 20px;
+  text-shadow: 9px 9px 20px rgba(12, 12, 12, 0.6);
+  font-family: "Manjari", sans-serif;
+  font-size: 45px;
   display: inline;
 }
-img {
-  border: 1px solid blue;
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -webkit-filter: brightness(100%);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    -webkit-filter: brightness(200%);
+  }
 }
-.pulse {
-  animation: pulse 3s infinite;
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    filter: brightness(100%);
+  }
+
+  100% {
+    transform: scale(1.05);
+    filter: brightness(100%);
+  }
+}
+#pulse {
   margin: 0 auto;
   display: table;
-  animation-direction: alternate;
   -webkit-animation-name: pulse;
   animation-name: pulse;
 }
-
-.show-message {
-  margin: 10px;
-  font-size: 25px;
-  color: blueviolet;
+.welcome-image img {
+  transform: rotate(270deg);
+  margin-top: -95px;
+  margin-bottom: -95px;
 }
+.instructions-image img {
+  margin: 30px 30px 15px;
+}
+
 .buttons .fa {
   font-size: 50px;
-  color: whitesmoke;
-
+  color: rgb(233, 159, 252);
   border-radius: 60px;
-  margin: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-footer .fa {
-  font-size: 20px;
-  margin: 30px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  color: whitesmoke;
+  margin: 20px 20px 10px;
 }
 
 .open-source {
   margin-bottom: 0px;
+  font-size: 11px;
+}
+.open-source a {
   font-size: 11px;
 }
 
@@ -62,12 +105,23 @@ i:hover {
   transform: translateY(-1px);
   cursor: pointer;
 }
+footer a {
+  font-size: 20px;
+
+  text-decoration: none;
+  color: black;
+}
+.links {
+  margin: 30px;
+}
+a:visited {
+  color: black;
+}
 
 .instructions {
-  border-radius: 30px;
-  margin: 15px;
-  padding: 15px;
-  font-size: 15px;
-  text-align: justify;
-  border: 1px solid black;
+  border-radius: 10px;
+  margin: 40px 30px 0px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
 }

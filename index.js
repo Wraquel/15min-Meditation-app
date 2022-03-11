@@ -6,16 +6,26 @@ var reset = document.getElementById("reset");
 var minutes = document.getElementById("minutes");
 var seconds = document.getElementById("seconds");
 
-var bell_meditate = new Audio("stop_meditate.mp3");
+var bell_meditate = new Audio("bell_meditate.mp3");
 
 //declare a reference to a countner variable that can be undefide or define in functions
 var startCountner;
 // Começar o timer-estabelecer intervalo de 1000 ms, quando a variavel startCountner for indefinida
 function Start() {
   bell_meditate.play();
-  if (startCountner === undefined);
-  startCountner = setInterval(timer, 1000);
+  if (startCountner === undefined) {
+    startCountner = setInterval(timer, 1000);
+    document.getElementById("daily-title").innerHTML = "Your daily";
+    document.getElementById("daily-title").classList.add("daily-title");
+    document.getElementById("meditation-title").innerHTML = "Meditation";
+    document
+      .getElementById("meditation-title")
+      .classList.add("meditation-title");
+    document.getElementById("pulse").style.animation =
+      "pulse 4s infinite alternate";
+  } else alert("Time is already running");
 }
+
 // Resetar o timer-parar intervalo, quando a variavel startCountner for indefinida e reestabelecer timer inicial
 function Reset() {
   minutes.innerText = 15;
@@ -34,10 +44,13 @@ function timer() {
     seconds.innerText = 59;
     minutes.innerText--;
   } else if (seconds.innerText == 0 && minutes.innerText == 0) {
-    document.getElementById("message").innerHTML = "Done";
-    document.getElementById("message").classList.add("show-message");
-
+    document.getElementById("daily-title").innerHTML = "";
+    document.getElementById("meditation-title").innerHTML = "Namastê";
+    document
+      .getElementById("meditation-title")
+      .classList.add("message-namaste");
     audio();
+    Reset();
   }
 }
 function audio() {
@@ -48,4 +61,5 @@ function audio() {
 // Parar o timer-limpar intervalo
 function stopInterval() {
   clearInterval(startCountner);
+  document.getElementById("pulse").style.animation = "none";
 }
