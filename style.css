@@ -4,15 +4,15 @@
 .container {
   font-family: "Belleza", sans-serif;
   border-radius: 20px;
-
+  border: 1px solid black;
   background: linear-gradient(
     -20deg,
     rgb(233, 222, 250) 0%,
     rgb(251, 252, 219) 100%
   );
 
-  max-width: 700px;
-  min-width: 400px;
+  max-width: 600px;
+  min-width: 350px;
   margin-top: 15px;
   padding-top: 20px;
 }
@@ -78,17 +78,16 @@
   animation-name: pulse;
 }
 .welcome-image img {
-  transform: rotate(270deg);
-  margin-top: -95px;
-  margin-bottom: -95px;
+  margin: 37px 30px;
 }
 .instructions-image img {
-  margin: 30px 30px 15px;
+  margin: 30px 0px 20px;
 }
 
 .buttons .fa {
   font-size: 50px;
-  color: rgb(233, 159, 252);
+  border: double 3px rgb(158, 134, 155);
+  color: rgba(118, 36, 156, 0.767);
   border-radius: 60px;
   margin: 20px 20px 10px;
 }
@@ -122,6 +121,6 @@ a:visited {
   border-radius: 10px;
   margin: 40px 30px 0px;
   padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 }
