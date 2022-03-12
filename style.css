@@ -93,7 +93,6 @@
   font-size: 50px;
   border: double 3px rgb(158, 134, 155);
   color: rgb(151, 150, 240);
-
   border-radius: 60px;
   margin: 25px 20px 10px;
 }
@@ -139,13 +138,16 @@ a:visited {
     margin-top: 2px;
     border-radius: 5px;
   }
+  .buttons .fa {
+    margin: 25px 20px 30px;
+  }
   .instructions {
     margin: 5px;
     font-size: 16px;
     text-align: justify;
   }
   .instructions-image img {
-    margin: 20px 0px 15px;
+    margin: 20px 0px 20px;
     width: 320px;
   }
   a {
@@ -173,21 +175,17 @@ a:visited {
     display: inline;
   }
   .welcome-image img {
-    margin: 50px 0px 40px;
+    margin: 50px 0px 50px;
     width: 330px;
   }
   .title-welcome h2 {
     font-size: 45px;
-
-    margin-top: 20px;
   }
   .title-welcome h3 {
     font-size: 35px;
-    margin-top: 5px;
   }
   .title-welcome h1 {
     font-size: 45px;
-    margin-top: 5px;
   }
 
   #pulse {
