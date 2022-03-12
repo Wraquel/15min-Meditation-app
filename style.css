@@ -11,8 +11,8 @@
     rgb(250, 252, 205) 100%
   );
   max-width: 600px;
-  min-width: 350px;
-  margin-top: 15px;
+  min-width: 400px;
+  margin-top: 5px;
   padding-top: 20px;
 }
 
@@ -38,6 +38,7 @@
 }
 .welcome-image img {
   margin: 50px 0px 20px;
+  width: 350px;
 }
 #meditation-title {
   line-height: 20px;
@@ -48,6 +49,7 @@
 
 .instructions-image img {
   margin: 35px 0px 20px;
+  width: 380px;
 }
 #pulse {
   margin: 0 auto;
@@ -101,7 +103,6 @@ i:hover {
   cursor: pointer;
 }
 .instructions {
-  border-radius: 10px;
   margin: 20px 30px 0px;
   padding: 10px;
   font-size: 18px;
@@ -126,4 +127,34 @@ a:visited {
 }
 .open-source a {
   font-size: 11px;
+}
+@media (max-width: 576px) {
+  .container {
+    margin-top: 2px;
+  }
+  .instructions {
+    margin: 5px;
+    font-size: 16px;
+    text-align: justify;
+  }
+  .instructions-image img {
+    margin: 20px 0px 15px;
+    width: 300px;
+  }
+  footer a {
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+  .links {
+    margin: 20px;
+  }
+  .open-source a {
+    display: inline;
+  }
+  .welcome-image img {
+    margin: 50px 0px 20px;
+    width: 300px;
+  }
 }
