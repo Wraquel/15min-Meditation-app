@@ -15,22 +15,21 @@
   margin-top: 5px;
   padding-top: 20px;
 }
-
-.title-welcome h2 {
+.title-welcome {
   color: rgba(0, 0, 0, 0.856);
+}
+.title-welcome h2 {
   font-size: 50px;
   text-align: start;
   margin-top: 50px;
   margin-left: 100px;
 }
 .title-welcome h3 {
-  color: rgba(0, 0, 0, 0.856);
   font-size: 40px;
   margin-top: 10px;
   text-align: center;
 }
 .title-welcome h1 {
-  color: rgba(0, 0, 0, 0.856);
   font-size: 50px;
   margin-top: 10px;
   text-align: end;
@@ -52,6 +51,7 @@
   width: 380px;
 }
 #pulse {
+  width: 350px;
   margin: 0 auto;
   display: table;
   -webkit-animation-name: pulse;
@@ -108,14 +108,20 @@ i:hover {
   font-size: 18px;
   text-align: center;
 }
-footer a {
+.links a {
   font-size: 20px;
-
   text-decoration: none;
   color: black;
 }
 .links {
   margin: 30px;
+}
+.img-leaf,
+.img-om {
+  width: 50px;
+}
+.img-incense {
+  width: 70px;
 }
 a:visited {
   color: black;
@@ -131,6 +137,7 @@ a:visited {
 @media (max-width: 576px) {
   .container {
     margin-top: 2px;
+    border-radius: 5px;
   }
   .instructions {
     margin: 5px;
@@ -139,22 +146,58 @@ a:visited {
   }
   .instructions-image img {
     margin: 20px 0px 15px;
-    width: 300px;
+    width: 320px;
   }
-  footer a {
-    font-size: 17px;
+  a {
     text-decoration: none;
+  }
+  a:hover {
+    color: black;
+  }
+  .links a {
+    font-size: 17px;
     color: black;
     display: block;
   }
   .links {
     margin: 20px;
   }
+  .img-leaf,
+  .img-om {
+    width: 35px;
+  }
+  .img-incense {
+    width: 55px;
+  }
   .open-source a {
     display: inline;
   }
   .welcome-image img {
-    margin: 50px 0px 20px;
-    width: 300px;
+    margin: 50px 0px 40px;
+    width: 330px;
+  }
+  .title-welcome h2 {
+    font-size: 45px;
+
+    margin-top: 20px;
+  }
+  .title-welcome h3 {
+    font-size: 35px;
+    margin-top: 5px;
+  }
+  .title-welcome h1 {
+    font-size: 45px;
+    margin-top: 5px;
+  }
+
+  #pulse {
+    width: 320px;
+  }
+  #minutes,
+  #seconds {
+    text-shadow: 9px 9px 20px rgba(12, 12, 12, 0.418);
+    font-family: "Manjari", sans-serif;
+    font-size: 42px;
+    display: inline;
   }
 }
