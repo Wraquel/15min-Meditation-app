@@ -7,10 +7,9 @@
   border: 1px solid black;
   background: linear-gradient(
     -20deg,
-    rgb(233, 222, 250) 0%,
-    rgb(251, 252, 219) 100%
+    rgb(228, 210, 255) 0%,
+    rgb(250, 252, 205) 100%
   );
-
   max-width: 600px;
   min-width: 350px;
   margin-top: 15px;
@@ -18,21 +17,27 @@
 }
 
 .title-welcome h2 {
+  color: rgba(0, 0, 0, 0.856);
   font-size: 50px;
   text-align: start;
   margin-top: 50px;
   margin-left: 100px;
 }
 .title-welcome h3 {
+  color: rgba(0, 0, 0, 0.856);
   font-size: 40px;
   margin-top: 10px;
   text-align: center;
 }
 .title-welcome h1 {
+  color: rgba(0, 0, 0, 0.856);
   font-size: 50px;
   margin-top: 10px;
   text-align: end;
   margin-right: 60px;
+}
+.welcome-image img {
+  margin: 50px 0px 20px;
 }
 #meditation-title {
   line-height: 20px;
@@ -40,15 +45,15 @@
 .message-namaste {
   font-size: 40px;
 }
-#timer {
-  margin: 0px 20px -20px;
+
+.instructions-image img {
+  margin: 35px 0px 20px;
 }
-#minutes,
-#seconds {
-  text-shadow: 9px 9px 20px rgba(12, 12, 12, 0.6);
-  font-family: "Manjari", sans-serif;
-  font-size: 45px;
-  display: inline;
+#pulse {
+  margin: 0 auto;
+  display: table;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
 }
 @-webkit-keyframes pulse {
   0% {
@@ -71,38 +76,36 @@
     filter: brightness(100%);
   }
 }
-#pulse {
-  margin: 0 auto;
-  display: table;
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
-}
-.welcome-image img {
-  margin: 37px 30px;
-}
-.instructions-image img {
-  margin: 30px 0px 20px;
-}
 
+#timer {
+  margin: 0px 20px -20px;
+}
+#minutes,
+#seconds {
+  text-shadow: 9px 9px 20px rgba(12, 12, 12, 0.6);
+  font-family: "Manjari", sans-serif;
+  font-size: 45px;
+  display: inline;
+}
 .buttons .fa {
   font-size: 50px;
   border: double 3px rgb(158, 134, 155);
-  color: rgba(118, 36, 156, 0.767);
-  border-radius: 60px;
-  margin: 20px 20px 10px;
-}
+  color: rgb(151, 150, 240);
 
-.open-source {
-  margin-bottom: 0px;
-  font-size: 11px;
-}
-.open-source a {
-  font-size: 11px;
+  border-radius: 60px;
+  margin: 25px 20px 10px;
 }
 
 i:hover {
   transform: translateY(-1px);
   cursor: pointer;
+}
+.instructions {
+  border-radius: 10px;
+  margin: 20px 30px 0px;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
 }
 footer a {
   font-size: 20px;
@@ -117,10 +120,10 @@ a:visited {
   color: black;
 }
 
-.instructions {
-  border-radius: 10px;
-  margin: 40px 30px 0px;
-  padding: 10px;
-  font-size: 18px;
-  text-align: center;
+.open-source {
+  margin-bottom: 0px;
+  font-size: 11px;
+}
+.open-source a {
+  font-size: 11px;
 }
