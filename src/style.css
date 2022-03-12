@@ -45,7 +45,12 @@
 .message-namaste {
   font-size: 40px;
 }
-
+.instructions {
+  margin: 20px 30px 0px;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+}
 .instructions-image img {
   margin: 35px 0px 20px;
   width: 380px;
@@ -101,16 +106,14 @@ i:hover {
   transform: translateY(-1px);
   cursor: pointer;
 }
-.instructions {
-  margin: 20px 30px 0px;
-  padding: 10px;
-  font-size: 18px;
-  text-align: center;
-}
+
 .links a {
   font-size: 20px;
   text-decoration: none;
   color: black;
+}
+.open-source a {
+  text-decoration: none;
 }
 .links {
   margin: 30px;
@@ -138,20 +141,33 @@ a:visited {
     margin-top: 2px;
     border-radius: 5px;
   }
-  .buttons .fa {
-    margin: 25px 20px 30px;
+  .welcome-image img {
+    margin: 50px 0px 50px;
+    width: 330px;
   }
-  .instructions {
-    margin: 5px;
-    font-size: 16px;
-    text-align: justify;
+  .title-welcome h2 {
+    font-size: 45px;
   }
-  .instructions-image img {
-    margin: 20px 0px 20px;
+  .title-welcome h3 {
+    font-size: 35px;
+  }
+  .title-welcome h1 {
+    font-size: 45px;
+  }
+
+  #pulse {
     width: 320px;
   }
-  a {
-    text-decoration: none;
+
+  #minutes,
+  #seconds {
+    text-shadow: 9px 9px 20px rgba(12, 12, 12, 0.418);
+    font-family: "Manjari", sans-serif;
+    font-size: 42px;
+    display: inline;
+  }
+  .buttons .fa {
+    margin: 25px 20px 30px;
   }
   a:hover {
     color: black;
@@ -174,28 +190,13 @@ a:visited {
   .open-source a {
     display: inline;
   }
-  .welcome-image img {
-    margin: 50px 0px 50px;
-    width: 330px;
+  .instructions {
+    margin: 15px auto;
+    font-size: 16px;
+    text-align: justify;
   }
-  .title-welcome h2 {
-    font-size: 45px;
-  }
-  .title-welcome h3 {
-    font-size: 35px;
-  }
-  .title-welcome h1 {
-    font-size: 45px;
-  }
-
-  #pulse {
+  .instructions-image img {
+    margin: 30px 0px 20px;
     width: 320px;
-  }
-  #minutes,
-  #seconds {
-    text-shadow: 9px 9px 20px rgba(12, 12, 12, 0.418);
-    font-family: "Manjari", sans-serif;
-    font-size: 42px;
-    display: inline;
   }
 }

@@ -6,7 +6,7 @@ var reset = document.getElementById("reset");
 var minutes = document.getElementById("minutes");
 var seconds = document.getElementById("seconds");
 
-var bell_meditate = new Audio("bell_meditate.mp3");
+var bell_meditate = new Audio("./midia/bell_meditate.mp3");
 
 //declare a reference to a countner variable that can be undefide or define in functions
 var startCountner;
@@ -35,7 +35,7 @@ function Reset() {
 }
 
 //Start Timer quando os segundos forem diferentes de 0, diminuir os segundos de 1 em 1.
-//Mas se os minutos forem diferentes de 0 e os segundos igausi guais a 0, tornar segundos 59
+//Mas se os minutos forem diferentes de 0 e os segundosiguais a 0, tornar segundos 59
 //e diminuir minutos de 1 em 1
 function timer() {
   if (seconds.innerText != 0) {
