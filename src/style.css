@@ -104,10 +104,15 @@ i:hover {
   transform: translateY(-1px);
   cursor: pointer;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
 .links a {
   font-size: 20px;
-  text-decoration: none;
-  color: black;
 }
 .links {
   margin: 30px;
@@ -118,9 +123,6 @@ i:hover {
 }
 .img-incense {
   width: 70px;
-}
-a:visited {
-  color: black;
 }
 .open-source {
   margin-bottom: 0px;
@@ -137,7 +139,7 @@ a:visited {
     border-radius: 5px;
   }
   .welcome-image img {
-    margin: 50px 0px 70px;
+    margin: 50px 0px 80px;
     width: 330px;
   }
   .title-welcome h2 {
@@ -155,15 +157,9 @@ a:visited {
     font-family: "Manjari", sans-serif;
     display: inline;
   }
-  .buttons .fa {
-    margin: 25px 20px 30px;
-  }
-  a:hover {
-    color: black;
-  }
+
   .links a {
     font-size: 17px;
-    color: black;
     display: block;
   }
   .links {
