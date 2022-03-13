@@ -196,6 +196,10 @@ a:visited {
   }
 }
 @media (max-width: 476px) {
+  #minutes,
+  #seconds {
+    font-size: 45px;
+  }
   .instructions-image img {
     margin: 24px 0px 8px;
     width: 350px;
