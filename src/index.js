@@ -36,26 +36,19 @@ function Reset() {
   stopInterval();
   startCountner = undefined;
 }
-// Se segundos forem menores que 10 colocar 0 antes da variável
-function formatTimer() {
-  if (wSeconds.innerText <= 9) {
-    wSeconds.innerText = `0${wSeconds.innerText}`;
-  }
-}
+
 //Start Timer quando os segundos forem diferentes de 0, diminuir os segundos de 1 em 1.
 //Mas se os minutos forem diferentes de 0 e os segundosiguais a 0, tornar segundos 59
 //e diminuir minutos de 1 em 1
 function timer() {
   if (wSeconds.innerText != 0) {
-    wSeconds.innerText--;
-    formatTimer();
+    parseInt(wSeconds.innerText--);
+    wSeconds.innerText = wSeconds.innerText.toString().padStart(2, "0");
   } else if (wMinutes.innerText != 0 && wSeconds.innerText == 0) {
     wSeconds.innerText = 59;
-    wMinutes.innerText--;
+    parseInt(wMinutes.innerText--);
+    wMinutes.innerText = wMinutes.innerText.toString().padStart(2, "0");
     // Se minutos forem menores que 10 colocar 0 antes da variável
-    if (wMinutes.innerText <= 9) {
-      wMinutes.innerText = `0${wMinutes.innerText}`;
-    }
   } else if (wSeconds.innerText == 0 && wMinutes.innerText == 0) {
     document.getElementById("daily-title").innerHTML = "";
     document.getElementById("meditation-title").innerHTML = "Namastê";
